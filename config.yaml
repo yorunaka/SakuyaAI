@@ -1,0 +1,9 @@
+embeddings_path: "andersonbcdefg/bge-small-4096"
+
+model_path:
+  small:
+  large:
+
+model_type: "orcamaid"
+
+model_config: {'max_new_tokens' : 512, 'temperature' : 0. 'context_length' : 4096, 'gpu_layers' : 0}
