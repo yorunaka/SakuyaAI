@@ -1,6 +1,6 @@
 import streamlit as st
 from llm_chains import load_normal_chain
-from langchain.memory import StreamlitChatMessageHistory
+from langchain_community.chat_message_histories import StreamlitChatMessageHistory 
 
 def load_chain(chat_history):
     return load_normal_chain(chat_history)

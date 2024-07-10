@@ -1,9 +1,13 @@
-embeddings_path: "andersonbcdefg/bge-small-4096"
+# embeddings_path: "andersonbcdefg/bge-small-4096"
+embeddings_path: "BAAI/bge-large-en-v1.5"
+  
+ctransformers:
+  model_path: "./model/orcamaid-v3-13b-32k.Q2_K.gguf"
 
-model_path:
-  small:
-  large:
-
-model_type: "orcamaid"
-
-model_config: {'max_new_tokens' : 512, 'temperature' : 0. 'context_length' : 4096, 'gpu_layers' : 0}
+  model_type: "orcamaid"
+  model_config: 
+    'max_new_tokens' : 256
+    'temperature' : 0
+    'context_length' : 2048
+    'gpu_layers' : 1
+  
